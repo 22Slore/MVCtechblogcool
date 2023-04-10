@@ -1,0 +1,37 @@
+<h2>dashboard</h2>
+<section id="allBlogs">
+    {{#each blogs}}
+        <section class="card">
+            <a href="/blogs/{{id}}" class="card-body">
+                <h5 class="cardTitle">{{title}}</h5>
+                <h5>Made by {{user.username}}</h5>
+                <p class="cardText">{{content}}</p>
+            </a>
+        </section>
+    {{/each}}
+</section>
+<section>
+    <section id="newBlog" class="card">
+        <div class="cardBody">
+            <h4 class="cardTitle">Create Post</h4>
+            <form id="newBlog">
+                <div class="cardText">
+                <label for="title">Title</label><br>
+                <input type="text" id="title" placeholder="title text">
+                </div>
+                <div class="cardText">
+                    <label for="content">Content</label>
+                    <textarea id="content" placeholder="content"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+</section>
+<form id="createPost">
+    <button>Create New Post</button>
+</form>
+
+<!--create post JS-->
+<script src="/js/create-post.js"></script>
+
+<!--complete-->

@@ -1,0 +1,24 @@
+
+[
+    {
+        "title": "post1",
+       "text": "exampletext",
+       "blog_id": 1
+    },
+    {
+        "title": "post2",
+       "content": "exampletext",
+       "blog_id": 1
+    },
+    {
+        "title": "post3",
+       "content": "exampletext",
+       "blog_id": 1
+    },
+    {
+        "title": "post4",
+       "content": "exampletext",
+       "blog_id": 1
+    }
+]
+

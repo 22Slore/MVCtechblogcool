@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Tech Blog</title>
+        <link rel="stylesheet" href="/css/jass.css">
+    </head>
+
+    <body>
+  <header class="display-flex justify-space-between align-center p-2">
+    <h1>
+      Logout or Sign In
+    </h1>
+    <nav class="navbar">
+      <ul class="flex-row">
+    {{#if logged_in}}
+      <button class="btn" id="logout">logout</button>
+    {{else}}
+      <li class="li-inline nav-item"><a href="/login">LOGIN</a></button>
+      <!--add btn for signup page-->
+      <li class="li-inline nav-item"><a href="/signup">signup</a></button>
+      <li class="li-inline nav-item"><a href="/dashboard">dashboard</a></button>
+    {{/if}}
+    </ul>
+    </nav>
+  </header>
+  <main class="container container-fluid mt-5">
+    {{{ body }}}
+  </main>
+  <footer>
+      
+  </footer>
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
+
+<!--comlete--> 

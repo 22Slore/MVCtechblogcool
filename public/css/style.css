@@ -1,0 +1,51 @@
+/* Basic styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #posts {
+    flex-grow: 1;
+    padding: 1rem;
+  }
+  
+  .post {
+    margin-bottom: 2rem;
+  }
+  
+  .post h2 {
+    margin-top: 0;
+  }
+  
+  #sidebar {
+    background-color: #eee;
+    padding: 1rem;
+    width: 25%;
+  }
+  
+  /* Media queries */
+  @media (max-width: 600px) {
+    main {
+      flex-direction: column;
+    }
+  
+    #sidebar {
+      width: 100%;
+    }
+  }
