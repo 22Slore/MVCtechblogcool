@@ -14,7 +14,7 @@ N/A
   
 ## Screenshots
 
-[!screenshot]("MVCsnip.PNG")
+[!screenshot](MVCsnip.PNG)
   
 ## Deployed Site
   
