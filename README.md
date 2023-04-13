@@ -2,7 +2,7 @@
 
 ## Description
 
-Tech Blog
+Tech Blog that allows you to login/signup and make posts and comment. Made with MVC pracices.
   
 ## Table of Contents (Optional)
 
