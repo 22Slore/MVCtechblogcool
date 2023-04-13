@@ -14,7 +14,7 @@ N/A
   
   
 ## Screenshots
-![Screenshot](MVC.snip.PNG)
+![Screenshot](screenshot.PNG)
 
 N/A
   
