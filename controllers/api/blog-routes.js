@@ -1,7 +1,7 @@
-// const router = require('express').Router();
-// const { Blog } = require('../../models');
+const router = require('express').Router();
+const { Blog } = require('../../models');
 
-const { Blog } = require("../../models");
+// const { Blog } = require("../../models");
 
 
 
@@ -19,5 +19,7 @@ router.post('/', async (req, res) => {
         res.status(400).json({ message: err.message });
     }
 });
+
+module.exports = router;
 
 //complete

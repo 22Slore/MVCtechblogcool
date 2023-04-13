@@ -4,19 +4,25 @@
         "name": "mort",
         "password": "mortiscool",
         "email": "mort@gmail.com",
-        "user_id": 1
+        "id": 1
     },
     {
         "name": "toby",
         "password": "tobyiscool",
         "email": "toby@gmail.com",
-        "user_id": 2
+        "id": 2
     },
     {
         "name": "rick",
         "password": "rickiscool",
         "email": "rick@gmail.com",
-        "user_id": 3
+        "id": 3
+    },
+    {
+        "id": 4,
+        "name": "Joe",
+        "email": "joe@email.com",
+        "password": "$2b$10$ftBy3ZQAZ4IfuYT6LUajgeFjCzbLsemgvpz0vbq1N2Qzb41AyVYpu"
     }
 ]
 

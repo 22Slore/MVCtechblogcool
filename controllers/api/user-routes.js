@@ -3,7 +3,7 @@ const { User } = require('../../models');
 
 //root post req
 
-
+//create a user
 router.post('/', async (req, res) => {
     try {
         //usersdata as const
@@ -66,6 +66,8 @@ router.post('/login', async (req, res) => {
     }
 });
 
+
+
 //logout
 router.post('/logout', (req, res) => {
     if (req.session.logged_in) {
@@ -84,4 +86,3 @@ router.post('/logout', (req, res) => {
 module.exports = router;
 
 //complete
-//thiss

@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
         console.log("hello");
         const userData = await User.findAll({
             attributes: { exclude: ['password'] },
-            order: [['name', 'ASC']],
+            // order: [['name', 'ASC']],
         });
 
         const users = userData.map((project) =>
@@ -32,6 +32,38 @@ router.get('/login', (req, res) => {
 
     res.render('login');
 });
+// navigates to signup on link click
+router.get('/signup', (req, res) => {
+    //if theres an existing session then redirect to home
+    if (req.session.logged_in) {
+        res.redirect('/signup');
+        return;
+    }
+
+    res.render('signup');
+});
+
+// navigates to dashboard on link click
+router.get('/dashboard', (req, res) => {
+    //if theres an existing session then redirect to home
+    if (req.session.logged_in) {
+        res.render('dashboard');
+        return;
+    }
+
+    res.render('dashboard');
+});
+
+router.get('/dashboard', (req, res) => {
+    //if theres an existing session then redirect to home
+    if (req.session.logged_in) {
+        res.render('dashboard');
+        return;
+    }
+
+    res.render('dashboard');
+});
+
 
 // router.get('/logout', (req, res) => {
 //     //if theres an existing session then redirect to home
